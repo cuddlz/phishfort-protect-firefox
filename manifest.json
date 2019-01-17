@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "PhishFort | Protect",
+  "short_name": "PhishFort | Protect",
+  "description": "Protect against phishing attacks targeting crypto users.",
+  "version": "0.0.2.9",
+  "author": "PhishFort",
+  "browser_action": {
+    "default_icon": "images/tab-icon.png",
+    "default_title": "PhishFort | Protect",
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "128": "images/tab-icon.png"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
+  },
+  "web_accessible_resources": [
+    "warning.html"
+  ],
+  "content_security_policy": "script-src 'self' https://www.google.com https://www.gstatic.com; object-src 'self'",
+  "permissions": [
+    "tabs"
+  ]
+}
